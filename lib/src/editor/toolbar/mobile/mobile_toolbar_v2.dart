@@ -83,8 +83,9 @@ class _MobileToolbarV2State extends State<MobileToolbarV2> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        Expanded(
+        Flexible(
           child: widget.child,
         ),
         // add a bottom offset to make sure the toolbar is above the keyboard
